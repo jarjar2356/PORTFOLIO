@@ -1,0 +1,656 @@
+ @charset "utf-8";
+
+body{
+    font-family: 'NotoSans','sans-serif','DungGeunMo','FSEX300';
+    margin: 0;
+}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ol,em{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+.cf:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+#wrap {
+	width: 100%;
+}
+
+/*전체시작*/
+#header{
+    background: #09273b;
+    padding: 40px 0 20px 0;
+}
+#header h1{
+    font-family: 'FSEX300';
+    text-align: center;
+    margin-bottom: 40px;
+}
+#header h1 a{
+    font-size: 80px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+/*컨테이너시작,안테나,더듬이*/
+#container{
+}
+.mainSlider{
+    background:#09273b;
+    position: relative;
+}
+.mainSlider .mainIn{
+    width: 1493px;
+    height: 752px;
+    background: url(../images/M1.png) no-repeat center center;
+}
+/*이름,뮤직플레이어*/
+.name{
+    font-family: 'FSEX300';
+    position: absolute;
+    bottom: 328px;
+    right: 160px;
+    -webkit-writing-mode: vertical-lr; 
+    -ms-writing-mode: tb-lr;
+}
+.mainSlider h3 a{
+    font-weight: normal;
+    font-size: 30px;
+}
+.mainSlider audio{
+    width: 240px;
+    height: 20px;
+    position: absolute;
+    left: 55px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    bottom: 435px;
+}
+.mainSlider.mainOut{}
+.mainSlider img{}
+.outr,.outl{
+    position:absolute;
+    top:0;
+    z-index: 11;
+}
+.outr{
+    left: 0;
+    margin: 10px 10px 0 10px;
+}
+.outl{
+    right: 0;
+    margin: 10px 10px 0 10px;
+}
+
+/*메인슬라이더,라디오버튼*/
+.mainSlider .radioBtn{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    font-size: 0;
+}
+.mainSlider .radioBtn img{
+    margin: 0 50px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+.mainSlider .radioBtn img:first-child{
+    margin-right: 20px;
+}
+.mainSlider .radioBtn img:last-child{
+    margin-left: 20px;
+}
+.btnRi,.btnLi{
+  -webkit-animation: spin 8s infinite linear;
+  -o-animation: spin 8s infinite linear;
+  -moz-animation: spin 8s infinite linear;
+  animation: spin 8s infinite linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+ 
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(280deg);}
+}
+ 
+@-moz-keyframes spin {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(280deg);}
+}
+@keyframes spin {
+    0%  {transform: rotate(0deg);}
+    100% {transform: rotate(280deg);}
+}
+.btnSc{
+    animation-name: shake-little;
+    animation-duration: 100ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/*메인슬라이더,스피커*/
+.shake-little {
+  display: inherit;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake-little:hover,
+.shake-trigger:hover .shake-little {
+  animation-play-state: running; }
+
+@keyframes shake-little {
+  2% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  4% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  6% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  8% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  10% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  12% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  14% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  16% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  18% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  20% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  22% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  24% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  26% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  28% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  30% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  32% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  34% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  36% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  38% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  40% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  42% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  44% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  46% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  48% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  50% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  52% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  54% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  56% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  58% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  60% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  62% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  64% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  66% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  68% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  70% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  72% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  74% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  76% {
+    transform: translate(0px, 1px) rotate(0.5deg); }
+  78% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  80% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  82% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  84% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  86% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  88% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  90% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  92% {
+    transform: translate(1px, 1px) rotate(0.5deg); }
+  94% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  96% {
+    transform: translate(1px, 0px) rotate(0.5deg); }
+  98% {
+    transform: translate(0px, 0px) rotate(0.5deg); }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake-little:hover,
+.shake-trigger:hover .shake-little, .shake-little.shake-freeze, .shake-little.shake-constant {
+  animation-name: shake-little;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
+
+/*플레이버튼*/
+.mainSlider{
+    position: relative;
+    padding-bottom: 58px;
+}
+.mainSlider .playBtnj{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+    font-size: 0;
+    font-family: 'FSEX300';
+}
+.mainSlider .playBtnj img{}
+
+.mainSlider ul{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 28.75px;
+}
+.mainSlider ul li{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #005b7f;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 120px;
+    
+    
+}
+.mainSlider ul li:first-child{
+    margin-left: 0;
+}
+.mainSlider ul li a{
+    font-size: 40px;
+    font-weight: normal;
+}
+/*플레이버튼 호버*/
+.mainSlider ul li:hover{
+    background: #69d9dd;
+}
+.mainSlider ul li a:hover{
+    color: #212121;
+}
+
+/*프로필*/
+.proFile{
+    width: 100%;
+    background: #09273b;
+    text-align: center;
+    padding: 150px 0 150px 0;
+    position: relative;
+}
+.proFile img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.PP_01{
+    margin: 0 150px 0 150px;
+}
+.proFile p{
+    color: #fff;
+    font-family: 'DungGeunMo';
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.translate{
+    content: "";
+    display: inline-block;
+    text-align: left;
+    width: 956px;
+    height: 943px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #005b7f;
+    opacity: .98;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+.translate:hover{
+    -webkit-transform: translateX(960px) translate(-42px);
+    -moz-transform: translateX(960px) translate(-42px);
+    -ms-transform: translateX(960px) translate(-42px);
+    -o-transform: translateX(960px) translate(-42px);
+    transform: translateX(960px) translate(-42px);
+}
+
+/*데코리아*/
+.decorea{
+    color: #fff;
+    font-weight: normal;
+    background: url(../images/Main_img00.png) no-repeat right 0 #09273b;
+    font-size: 0;
+    position: relative;
+}
+.decorea img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.mainDe{
+    margin-left: 145px;
+    margin-right: 315px;
+}
+.long{}
+.BL{
+    margin-left: 142px;
+}
+.BR{}
+.decorea ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 122px;
+    text-align: right;
+    margin-right: 180px;
+}
+.decorea h1{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.decorea p{
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 50px;
+    font-family: 'DungGeunMo';
+}
+.decorea h2{
+    font-size: 35px;
+    margin-top: 190px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.decorea h2:last-child{
+    margin-top: 0;
+}
+/*홈버튼*/
+.homeBtn{
+    width: 18px;
+    height: 100px;
+    border-radius: 50px;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    right: 100px;
+    bottom: 88px;
+    font-family: 'FSEX300';
+    letter-spacing: 5px;
+    -webkit-writing-mode: vertical-lr; 
+    -ms-writing-mode: tb-lr;
+}
+.homeBtn a{
+    color: #333;
+    font-size: 20px;
+    
+}
+.name{
+    font-family: 'FSEX300';
+    position: absolute;
+    bottom: 328px;
+    right: 160px;
+    -webkit-writing-mode: vertical-lr; 
+    -ms-writing-mode: tb-lr;
+}
+/*플레디스*/
+.pledis{
+    color: #fff;
+    font-weight: normal;
+    background: url(../images/Long_FR.png) no-repeat center center #09273b;
+    font-size: 0;
+    position: relative;
+    padding: 90px 0 90px 0;
+}
+.BL1{
+    margin-left: 142px;
+}
+.BR1{
+    float: right;
+    margin-right: 142px;
+}
+.pledisImg{
+    margin-left: 190px;
+    margin-top: 85px;
+    vertical-align: top;
+}
+.pledis ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 152px;
+    text-align: right;
+    margin-right: 355px;
+}
+.pledis h1{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.pledis p{
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 50px;
+    font-family: 'DungGeunMo';
+}
+.pledis h2{
+    font-size: 35px;
+    margin-top: 185px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.pledis h2:last-child{
+    margin-top: 0;
+}
+.pl{
+    right: 105px;
+    bottom: 90px;
+}
+
+/*페르시안 궁전*/
+.persian{
+    color: #fff;
+    font-family: 'DungGeunMo';
+    font-weight: normal;
+    background: url(../images/Main_img00.png) no-repeat right 0 #09273b;
+    font-size: 0;
+    position: relative;
+    padding: 50px 0 50px 0;
+}
+.persian img{
+    display: inline-block;
+}
+.mainPe{
+    margin-left: 200px;
+    margin-right: 180px;
+    vertical-align: top;
+}
+.long{}
+.BL2{
+    margin-left: 142px;
+}
+.BR2{}
+.persian ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 85px;
+    text-align: right;
+    margin-right: 180px;
+}
+.persian h1{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.persian p{
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 50px;
+    font-family: 'DungGeunMo';
+}
+.persian h2{
+    font-size: 35px;
+    margin-top: 285px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.persian h2:last-child{
+    margin-top: 0;
+}
+.pp{
+    right: 95px;
+    bottom: 123px;
+}
+
+/*오리온*/
+.orion{
+    color: #fff;
+    font-family: 'DungGeunMo';
+    font-weight: normal;
+    background: url(../images/Main_img04_30.png) no-repeat center center #09273b;
+    font-size: 0;
+    position: relative;
+    padding: 66px 0 66px 0;
+}
+.orion img{
+    display: inline-block;
+}
+.mainOr{
+    margin-left: 590px;
+    margin-right: 667px;
+    vertical-align: top;
+}
+.long{}
+.BL3{
+    margin-left: 142px;
+}
+.BR3{}
+.orion ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 85px;
+    text-align: right;
+    margin-right: 180px;
+}
+.orion h1{
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.orion p{
+    font-size: 25px;
+    line-height: 50px;
+    margin-top: 50px;
+    font-family: 'DungGeunMo';
+}
+.orion h2{
+    font-size: 35px;
+    margin-top: 285px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+}
+.orion h2:last-child{
+    margin-top: 0;
+}
+.or{
+    right: 95px;
+    bottom: 110px;
+}
+/*푸터*/
+.pickme{
+    color: #fff;
+    font-family: 'DungGeunMo';
+    font-weight: normal;
+    text-align: center;
+    background: #005b7f;
+    position: relative;
+    font-size: 0;
+    padding: 80px 0 80px 0;
+}
+.pickme img{
+    display: inline-block;
+    margin-left: 1600px;
+}
+.pickme img:first-child{
+    margin-left: 0;
+}
+.pickme ul{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+.pickme h1{
+    display: block;
+    font-size: 85px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+    margin-bottom: 100px;
+}
+.pickme p{
+    display: block;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'FSEX300';
+    line-height: 50px;
+}
+.pic{
+    right: 100px;
+    bottom: 80px;
+}
+
+
